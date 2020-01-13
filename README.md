@@ -1,5 +1,7 @@
 # AngularCarDealership
 
+![list-cars:screenshot](https://user-images.githubusercontent.com/9489977/72301927-a4f15700-3668-11ea-9413-6cfa5a5bb0f3.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
 ## Development server
