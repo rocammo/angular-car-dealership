@@ -1,0 +1,20 @@
+<table class="cars">
+  <thead>
+    <td rowspan="1"></td>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>Year</th>
+  </thead>
+  <tr
+    *ngFor="let car of cars"
+    [class.selected]="car === selectedCar"
+    (click)="onSelect(car)"
+  >
+    <th scope="row">{{ car.id }}</th>
+    <td>{{ car.brand }}</td>
+    <td>{{ car.model }}</td>
+    <td>{{ car.year }}</td>
+  </tr>
+</table>
+
+<app-list-cars-detail [car]="selectedCar"></app-list-cars-detail>

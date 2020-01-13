@@ -1,0 +1,22 @@
+<div class="cars-detail" *ngIf="car">
+  <h2>Vehicle details</h2>
+  <div><span>id: </span>{{ car.id }}</div>
+  <div>
+    <label
+      >brand:
+      <input [(ngModel)]="car.brand" placeholder="brand" />
+    </label>
+  </div>
+  <div>
+    <label
+      >model:
+      <input [(ngModel)]="car.model" placeholder="model" />
+    </label>
+  </div>
+  <div>
+    <label>
+      year&nbsp;:
+      <input [(ngModel)]="car.year" placeholder="year" />
+    </label>
+  </div>
+</div>

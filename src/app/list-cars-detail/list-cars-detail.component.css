@@ -1,0 +1,11 @@
+.cars-detail {
+  margin: 3.5em 2em 2em 0;
+  padding: 1em;
+  border: 1px solid black;
+  width: 35em;
+  float: left;
+}
+
+input {
+  width: 38em;
+}
