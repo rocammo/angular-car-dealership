@@ -10,11 +10,15 @@ export class MessageService {
     this.messages = [];
   }
 
-  add(message: string) {
+  add(message: string): void {
     this.messages.push(message);
   }
 
-  clear() {
+  tail(): string {
+    return this.messages.pop();
+  }
+
+  clear(): void {
     this.messages = [];
   }
 }

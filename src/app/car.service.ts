@@ -36,7 +36,7 @@ export class CarService {
   }
 
   /** Log a CarService message with the MessageService */
-  private log(message: string) {
+  private log(message: string): void {
     this.messageService.add(`CarService: ${message}`);
   }
 }
