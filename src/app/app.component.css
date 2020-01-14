@@ -68,6 +68,11 @@ a:hover {
   color: #125699;
 }
 
+hr.footer {
+  clear: left;
+  width: 60%;
+}
+
 footer {
   margin-top: 8px;
   display: flex;

@@ -31,6 +31,12 @@ export class CarService {
     );
   }
 
+  deleteCar(car: Car | number): Observable<Car[]> {
+    const id: number = typeof car === "number" ? car : car.id;
+    const index: number = CARS.map(car => car.id).indexOf(id);
+    return of(CARS.splice(index, 1));
+  }
+
   private genId(cars: Car[]): number {
     return cars.length > 0 ? Math.max(...cars.map(car => car.id)) + 1 : 11;
   }

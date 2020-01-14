@@ -4,6 +4,7 @@
     <th>Brand</th>
     <th>Model</th>
     <th>Year</th>
+    <td rowspan="1"></td>
   </thead>
   <tr
     *ngFor="let car of cars"
@@ -14,6 +15,11 @@
     <td>{{ car.brand }}</td>
     <td>{{ car.model }}</td>
     <td>{{ car.year }}</td>
+    <td>
+      <button class="delete" (click)="delete(selectedCar)">
+        x
+      </button>
+    </td>
   </tr>
 </table>
 

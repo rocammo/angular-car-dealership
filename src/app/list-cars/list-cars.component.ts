@@ -25,4 +25,10 @@ export class ListCarsComponent implements OnInit {
   getCars(): void {
     this.carService.getCars().subscribe(cars => (this.cars = cars));
   }
+
+  delete(car: Car): void {
+    this.selectedCar = null;
+    this.cars = this.cars.filter(c => c !== car);
+    this.carService.deleteCar(car).subscribe();
+  }
 }
