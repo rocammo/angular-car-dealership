@@ -7,13 +7,15 @@ import { AppComponent } from "./app.component";
 import { NewCarComponent } from "./new-car/new-car.component";
 import { ListCarsComponent } from "./list-cars/list-cars.component";
 import { ListCarsDetailComponent } from "./list-cars-detail/list-cars-detail.component";
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewCarComponent,
     ListCarsComponent,
-    ListCarsDetailComponent
+    ListCarsDetailComponent,
+    MessagesComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

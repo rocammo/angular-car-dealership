@@ -1,1 +1,32 @@
-<p>new-car works!</p>
+<div class="new-car">
+  <h2>New vehicle</h2>
+  <div>
+    <label
+      >brand:
+      <input #carBrand />
+    </label>
+  </div>
+  <div>
+    <label
+      >model:
+      <input #carModel />
+    </label>
+  </div>
+  <div>
+    <label>
+      year&nbsp;:
+      <input #carYear />
+    </label>
+  </div>
+  <app-messages [show]="showLog"></app-messages>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+    (click)="
+      add(carBrand.value, carModel.value, carYear.value);
+      clear();
+      showLog = true
+    "
+  >
+    ADD
+  </button>
+</div>
