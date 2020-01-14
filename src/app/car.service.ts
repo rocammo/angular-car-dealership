@@ -22,9 +22,13 @@ export class CarService {
       return;
     }
 
-    const newCar = { id: this.genId(CARS), ...car };
+    const newCar: Car = { id: this.genId(CARS), ...car };
     CARS.push(newCar);
-    this.log(`${JSON.stringify(newCar)}: successfully added`);
+    this.log(
+      `[${newCar.id}] \
+      ${newCar.brand} ${newCar.model} (${newCar.year}): \
+      successfully added`
+    );
   }
 
   private genId(cars: Car[]): number {
